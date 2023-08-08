@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif, Arial, Helvetica,
+    sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #000000;
+  padding-top: 100px;
+  height: 100vh;
+}
+.app {
+  width: 60%;
+  border: 1px solid #4682b4;
+  border-radius: 3rem 3rem 0 0;
+}
+.app h1 {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  border-radius: 3rem 3rem 0 0;
+  background-color: #4682b4;
+  text-align: center;
+  padding: 10px 0;
+}
+.app form {
+  display: flex;
+  width: 100%;
+}
+/*Inputs*/
+.app form input {
+  border: none;
+  border-bottom: 1px solid #808080;
+  background-color: #87ceeb;
+  font-size: 1.2rem;
+  color: black;
+  padding: 10px;
+  width: 90%;
+}
+.app form input:focus {
+  outline: none;
+}
+
+/*Button*/
+.app form button {
+  border: none;
+  border-bottom: 1px solid #808080;
+  background-color: #1dd2af;
+  font-size: 25px;
+  font-weight: 600;
+  width: 10%;
+}
+.app ul {
+  list-style: none;
+  padding: 0;
+}
+.app ul li {
+  padding: 10px;
+  background-color: #87ceeb;
+  border-bottom: 1px solid #808080;
+}
+/*Check*/
+.check {
+  width: 0.9em;
+  height: 0.9em;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+.check:checked {
+  background-color: #1dd2af;
+}
+/*Task*/
+.task {
+  font-size: 1.3rem;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+}
+.task:focus {
+  outline: none;
+}
+/*Trash*/
+.app ul li span {
+  float: right;
+  cursor: pointer;
+}
+.app ul li span:hover {
+  color: rgb(255, 82, 82);
+}
+
+/*Task completed*/
+.completed {
+  color: rgba(128, 128, 128, 0.8);
+  text-decoration: line-through;
+}
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+  }
+}
